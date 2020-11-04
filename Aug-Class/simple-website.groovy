@@ -1,9 +1,11 @@
+env.node_ip='167.172.146.135'
 node{
-    properties([
-        parameters([
-            string(defaultValue: '', description: 'Provide Remote Node IP', name: 'node_ip', trim: true)
-        ])
-    ])
+    // properties([
+    //     parameters([
+    //         string(defaultValue: '', description: 'Provide Remote Node IP', name: 'node_ip', trim: true)
+    //     ])
+    // ])
+
 
     stage("Git Clone"){
         git url: 'https://github.com/ikambarov/simple-site.git'
