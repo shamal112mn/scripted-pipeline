@@ -19,6 +19,9 @@ node{
         stage('Start Apache'){
             sh "ssh -o StrictHostKeyChecking=false -i $SSH_KEY root@${node_ip} 'systemctl start httpd && systemctl enable httpd'"
         }
+        stage('Final stage'){
+            sh "echo End"
+        }
     } 
 }
 
