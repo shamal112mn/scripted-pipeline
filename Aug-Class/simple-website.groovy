@@ -8,7 +8,7 @@ node{
 
 
     stage("Git Clone"){
-        git url: 'https://github.com/ikambarov/simple-site.git'
+        git url: 'https://github.com/shamal112mn/jenkins-test.git'
     }
 
     withCredentials([sshUserPrivateKey(credentialsId: 'jenkins-ssh-key', keyFileVariable: 'SSH_KEY', passphraseVariable: '', usernameVariable: 'SSH_USERNAME')]) {
