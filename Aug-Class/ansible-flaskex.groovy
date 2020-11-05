@@ -1,9 +1,10 @@
-node{
-    properties([
-        parameters([
-            string(defaultValue: '', description: 'Provide Remote Node IP', name: 'node_ip', trim: true)
-        ])
-    ])
+env.node_ip='167.172.146.135'
+// node{
+//     properties([
+//         parameters([
+//             string(defaultValue: '', description: 'Provide Remote Node IP', name: 'node_ip', trim: true)
+//         ])
+//     ])
 
     if(node_ip.length() > 7 ){
         stage("Git Pull"){
