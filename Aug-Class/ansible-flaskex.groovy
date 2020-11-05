@@ -1,5 +1,5 @@
 env.node_ip='167.172.146.135'
-// node{
+node{
 //     properties([
 //         parameters([
 //             string(defaultValue: '', description: 'Provide Remote Node IP', name: 'node_ip', trim: true)
