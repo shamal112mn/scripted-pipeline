@@ -42,6 +42,6 @@ node{
         }  
     }
     else {
-        error("Please, provide a valid IP ver 1")
+        error("Please, provide a valid IP ver 3")
     }
 }
